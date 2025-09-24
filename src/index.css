@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary (Bright Pink/Fuchsia) */
+  --color-primary-400: #e3058b;
+  --color-primary-500: #fe3b7c;
+  --color-primary-600: #e91e63;
+  --color-primary-700: #c7175d;
+
+  /* Accent (Cyan Blue) */
+  --color-accent-400: #16aeff;
+  --color-accent-500: #007fd4;
+  --color-accent-600: #0064a7;
+  --color-accent-700: #006064;
+}
+
+body {
+  background-color: #004574;
+}
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); */
+
+@layer base {
+  body {
+    @apply bg-black text-white font-sans antialiased;
+    margin: 0;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent-400 to-primary-400 bg-clip-text text-transparent;
+  }
+
+  .glass-card {
+    @apply backdrop-blur-lg bg-white/5 border border-white/10 rounded-2xl;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-400 to-primary-500 hover:from-primary-400 hover:to-primary-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply border border-white/20 hover:border-accent-500 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:bg-accent-500/10;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-primary-500 to-accent-500 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply from-primary-400 to-accent-400;
+}
