@@ -254,7 +254,7 @@ const Services = () => {
 
       {/* Technologies Section */}
       <section className="py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-max flex flex-col justify-center items-center mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
@@ -267,7 +267,7 @@ const Services = () => {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
             {[
               { name: 'Instagram', icon: Instagram, color: 'from-pink-500 to-purple-500' },
               { name: 'YouTube', icon: Youtube, color: 'from-red-500 to-red-600' },
