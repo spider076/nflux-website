@@ -10,6 +10,7 @@ const Header = () => {
   const location = useLocation();
 
   const navItems = [
+    { name: "Home", path: "/" },
     { name: "Portfolio", path: "/portfolio" },
     { name: "Services", path: "/services" },
     { name: "Our Work", path: "/our-work" },
@@ -34,7 +35,7 @@ const Header = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 py-2 transition-all duration-300 ${
+      className={`top-0 left-0 right-0 z-50 py-2 transition-all duration-300 ${
         scrolled
           ? "bg-transparent backdrop-blur-lg border-b border-white/10"
           : "bg-transparent"
@@ -48,7 +49,7 @@ const Header = () => {
               whileHover={{ scale: 1.05 }}
               className="flex items-center space-x-2"
             >
-              <img src={Logo} alt="Logo" className="w-23 h-20" />
+              <img src={Logo} alt="Logo" className="mt-4 w-22 h-19" />
               {/* <div className="w-10 h-10 bg-gradient-to-r from-primary-500 to-accent-500 rounded-lg flex items-center justify-center font-bold text-xl">
                 N
               </div>

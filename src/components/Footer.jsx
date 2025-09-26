@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram, Linkedin } from 'lucide-react';
+import { Facebook } from 'lucide-react';
 
 const Footer = () => {
   const quickLinks = [
@@ -11,22 +12,20 @@ const Footer = () => {
     { name: 'Our Work', path: '/our-work' },
   ];
 
-  const services = [
-    'UGC Content Creation',
-    'Influencer Marketing',
-    'Brand Strategy',
-    'Social Media Management',
-    'Performance Marketing',
+  const contactus = [
+    '+91 8296266926',
+    'nflux@gmail.com',
+    '#23, BTM 2nd Stage, Bangalore-560078',
   ];
 
   const socialLinks = [
     { icon: Instagram, href: '#', label: 'Instagram' },
     { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
+    { icon: Facebook, href: '#', label: 'Facebook' },
   ];
 
   return (
-    <footer className="bg-gradient-to-b from-gray-900 to-black border-t border-white/10">
+    <footer className="bg-black border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
@@ -89,11 +88,11 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="font-semibold text-lg mb-4">Services</h3>
+            <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
             <ul className="space-y-3">
-              {services.map((service) => (
-                <li key={service}>
-                  <span className="text-gray-400">{service}</span>
+              {contactus.map((contact) => (
+                <li key={contact}>
+                  <span className="text-gray-400">{contact}</span>
                 </li>
               ))}
             </ul>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Users, TrendingUp, Target, Zap, BarChart3, Crown, Play, ArrowRight, Instagram, Youtube, Facebook, Linkedin, Twitter, MessageCircle } from 'lucide-react';
+import { Users, TrendingUp, Target, Zap, BarChart3, Crown, Play, ArrowRight, Instagram, Youtube, Facebook, Linkedin, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Services = () => {
@@ -26,7 +26,6 @@ const Services = () => {
       features: [
         'Micro & macro influencers',
         'Cross-platform campaigns',
-        'Performance tracking',
         'ROI optimization'
       ],
       color: 'from-purple-500 to-pink-500'
@@ -54,18 +53,6 @@ const Services = () => {
         'Social listening'
       ],
       color: 'from-orange-500 to-red-500'
-    },
-    {
-      icon: BarChart3,
-      title: 'Performance Marketing',
-      description: 'Data-driven campaigns optimized for maximum ROI and measurable business growth.',
-      features: [
-        'Conversion tracking',
-        'A/B testing',
-        'Campaign optimization',
-        'Analytics reporting'
-      ],
-      color: 'from-indigo-500 to-blue-500'
     },
     {
       icon: Crown,
@@ -286,8 +273,6 @@ const Services = () => {
               { name: 'YouTube', icon: Youtube, color: 'from-red-500 to-red-600' },
               { name: 'Facebook', icon: Facebook, color: 'from-blue-500 to-blue-600' },
               { name: 'LinkedIn', icon: Linkedin, color: 'from-blue-600 to-blue-700' },
-              { name: 'Twitter', icon: Twitter, color: 'from-sky-400 to-sky-500' },
-              { name: 'TikTok', icon: MessageCircle, color: 'from-black to-gray-800' }
             ].map((platform, index) => (
               <motion.div
                 key={platform.name}

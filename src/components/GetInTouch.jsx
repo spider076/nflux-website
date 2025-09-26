@@ -5,6 +5,7 @@ import { Mail, Phone, MapPin, Send, MessageCircle, ArrowRight } from 'lucide-rea
 const GetInTouch = () => {
   const [formData, setFormData] = useState({
     name: '',
+    brandname: '',
     email: '',
     message: ''
   });
@@ -120,6 +121,21 @@ const GetInTouch = () => {
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                      Brand Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="brandname"
+                      name="brandname"
+                      value={formData.brandname}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg focus:border-accent-500 focus:outline-none transition-colors text-white placeholder-gray-500"
+                      placeholder="Enter your full name"
+                    />
+                  </div>
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                       Full Name *
