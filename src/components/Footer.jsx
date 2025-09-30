@@ -10,18 +10,20 @@ const Footer = () => {
     { name: 'Portfolio', path: '/portfolio' },
     { name: 'Services', path: '/services' },
     { name: 'Our Work', path: '/our-work' },
+    { name: 'Get in Touch', path: '/get-in-touch' },
+    { name: 'Work With Us', path: '/work-with-us' },
   ];
 
   const contactus = [
-    '+91 8296266926',
-    'nflux@gmail.com',
-    '#23, BTM 2nd Stage, Bangalore-560078',
+    '+91 7676347377',
+    'info@nfluzmedia.com',
+    '77/1 ranoji Rao road Basavanagudi Bangalore 560004',
   ];
 
   const socialLinks = [
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Facebook, href: '#', label: 'Facebook' },
+    { icon: Instagram, href: 'https://www.instagram.com/nfluzmedia?igsh=MTQyMnF3amszNWIwYg%3D%3D&utm_source=qr', label: 'Instagram' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/nfluz-media-894814387?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', label: 'LinkedIn' },
+    { icon: Facebook, href: 'https://www.facebook.com/share/173jQrPrt1/?mibextid=wwXIfr', label: 'Facebook' },
   ];
 
   return (

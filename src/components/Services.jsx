@@ -267,7 +267,7 @@ const Services = () => {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4j gap-8">
             {[
               { name: 'Instagram', icon: Instagram, color: 'from-pink-500 to-purple-500' },
               { name: 'YouTube', icon: Youtube, color: 'from-red-500 to-red-600' },

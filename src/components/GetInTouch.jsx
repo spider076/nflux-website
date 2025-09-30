@@ -242,7 +242,7 @@ const GetInTouch = () => {
                     <h3 className="font-semibold text-lg mb-2">Email Us</h3>
                     <p className="text-gray-400 mb-2">Send us a detailed message and we'll respond within 24 hours.</p>
                     <a href="mailto:hello@NFLUZ.agency" className="text-accent-400 hover:text-accent-300 transition-colors">
-                      nfluxmedia@gmail.com
+                      info@nfluzmedia.com
                     </a>
                   </div>
                 </motion.div>
